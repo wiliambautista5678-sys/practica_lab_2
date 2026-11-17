@@ -9,9 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "locar": "^0.2.0",
-    "three": "^0.170.0"
-  },
+  "locar": "^0.2.0",
+  "three": "^0.170.0"
+},
   "devDependencies": {
     "vite": "^5.4.0"
   }
