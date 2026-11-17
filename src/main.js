@@ -1,6 +1,6 @@
 import * as THREE from "three";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
-import { App } from "locar";
+import * as LocAR from "locar";
 
 // Coordenada del Laboratorio de Redes
 const TARGET = {
@@ -132,7 +132,7 @@ async function startAR() {
   setInfo("Iniciando cámara, sensores y GPS...");
 
   try {
-    const app = new App({
+    const app = new LocAR.App({
       canvas,
       cameraOptions: {
         hFov: 80,
