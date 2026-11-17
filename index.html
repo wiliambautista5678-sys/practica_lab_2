@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>AR por ubicación — LocAR.js</title>
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background: #000;
+      font-family: Arial, sans-serif;
+    }
+
+    #ar {
+      display: block;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    #ui {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      padding: 12px;
+      color: #fff;
+      background: rgba(0, 0, 0, 0.55);
+    }
+
+    #startBtn {
+      padding: 14px 18px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+      border-radius: 6px;
+      background: #00a651;
+      color: #fff;
+    }
+
+    #startBtn:disabled {
+      background: #555;
+      cursor: default;
+    }
+
+    #info {
+      margin-top: 10px;
+      font-size: 14px;
+      line-height: 1.35;
+    }
+
+    #legend {
+      margin-top: 8px;
+      font-size: 12px;
+      color: #ddd;
+    }
+  </style>
+</head>
+<body>
+
+  <canvas id="ar"></canvas>
+
+  <div id="ui">
+    <button id="startBtn">INICIAR AR</button>
+
+    <div id="info">
+      Pulsa INICIAR AR y acepta permisos de cámara y ubicación.
+    </div>
+
+    <div id="legend">
+      Calibración: rojo=Norte, amarillo=Sur, celeste=Oeste, verde=Este.
+      El modelo 3D representa el Laboratorio de Redes.
+    </div>
+  </div>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
