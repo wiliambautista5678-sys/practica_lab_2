@@ -2,8 +2,7 @@ import * as THREE from "three";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 import { App } from "locar";
 
-// Coordenada del Laboratorio de Redes indicada en el laboratorio.
-// Puedes cambiarla por la coordenada real de tu sitio.
+// Coordenada del Laboratorio de Redes
 const TARGET = {
   lat: -2.299114,
   lon: -78.118125,
